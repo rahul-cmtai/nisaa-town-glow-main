@@ -105,10 +105,17 @@ const PlotCards = () => {
                   </ul>
                   
                   <Button 
+                    asChild
                     className={`w-full ${plot.popular ? 'bg-gradient-primary text-white shadow-primary hover:shadow-elegant hover:-translate-y-0.5 transition-all duration-300' : ''}`}
                     variant={plot.popular ? 'default' : 'outline'}
                   >
-                    View Details
+                    <a
+                      href="https://wa.me/919963627722?text=I%20am%20interested%20in%20NISAA%20SEZ%20TOWN%20plot%20details."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      WhatsApp
+                    </a>
                   </Button>
                 </div>
               </motion.div>
