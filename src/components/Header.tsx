@@ -117,14 +117,25 @@ const Header = () => {
 
           {/* CTA Button & Mobile Menu */}
           <div className="flex items-center gap-4">
-            <Button
-              variant={isScrolled ? "premium" : "hero"}
-              size="sm"
-              className="hidden sm:flex items-center gap-2"
-            >
-              <Phone className="w-4 h-4" />
-              Call Now
-            </Button>
+            <a href="tel:9963627722">
+              <Button
+                variant={isScrolled ? "premium" : "hero"}
+                size="sm"
+                className="hidden sm:flex items-center gap-2"
+              >
+                <Phone className="w-4 h-4" />
+                Call Now
+              </Button>
+            </a>
+            <a href="https://wa.me/919963627722" target="_blank" rel="noopener noreferrer">
+              <Button
+                variant={isScrolled ? "premium" : "hero"}
+                size="sm"
+                className="hidden sm:flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white"
+              >
+                WhatsApp
+              </Button>
+            </a>
 
             {/* Mobile Menu Button */}
             <button
@@ -162,10 +173,17 @@ const Header = () => {
               </button>
             ))}
             <div className="px-4 pt-2">
-              <Button variant="premium" size="sm" className="w-full">
-                <Phone className="w-4 h-4 mr-2" />
-                Call Now
-              </Button>
+              <a href="tel:9963627722">
+                <Button variant="premium" size="sm" className="w-full">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Call Now
+                </Button>
+              </a>
+              <a href="https://wa.me/919963627722" target="_blank" rel="noopener noreferrer">
+                <Button variant="premium" size="sm" className="w-full mt-2 bg-green-500 hover:bg-green-600 text-white">
+                  WhatsApp
+                </Button>
+              </a>
             </div>
           </nav>
         </motion.div>

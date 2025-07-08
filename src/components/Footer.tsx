@@ -84,12 +84,13 @@ const Footer = () => {
               
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent" />
-                <p className="text-primary-foreground/80 text-sm">+91 9999 999 999</p>
+                <a href="tel:9963627722" className="text-primary-foreground/80 text-sm hover:underline">9963627722</a>
+                <a href="https://wa.me/919963627722" target="_blank" rel="noopener noreferrer" className="ml-2 text-green-400 hover:underline">WhatsApp</a>
               </div>
               
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent" />
-                <p className="text-primary-foreground/80 text-sm">info@nisaarealtors.com</p>
+                <p className="text-primary-foreground/80 text-sm">nissasezztown@gmail.com</p>
               </div>
             </div>
           </motion.div>

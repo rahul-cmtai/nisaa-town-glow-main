@@ -119,7 +119,8 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Phone</h4>
-                    <p className="text-muted-foreground">+91 9999 999 999</p>
+                    <a href="tel:9963627722" className="text-muted-foreground hover:underline block">9963627722</a>
+                    <a href="https://wa.me/919963627722" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:underline block">WhatsApp</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -128,7 +129,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Email</h4>
-                    <p className="text-muted-foreground">info@nisaarealtors.com</p>
+                    <p className="text-muted-foreground">nissasezztown@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -257,12 +258,14 @@ const ContactForm = () => {
           transition={{ duration: 0.5, delay: 1 }}
           className="fixed bottom-6 right-6 z-50"
         >
-          <Button
-            className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg animate-pulse"
-            size="icon"
-          >
-            <MessageSquare className="w-6 h-6" />
-          </Button>
+          <a href="https://wa.me/919963627722" target="_blank" rel="noopener noreferrer">
+            <Button
+              className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg animate-pulse"
+              size="icon"
+            >
+              <MessageSquare className="w-6 h-6" />
+            </Button>
+          </a>
         </motion.div>
       </div>
     </section>
