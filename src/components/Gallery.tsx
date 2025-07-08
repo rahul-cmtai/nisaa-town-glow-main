@@ -2,37 +2,62 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 import plotSample from "@/assets/plot-sample.jpg";
+import img1 from "@/assets/gallery/IMG-20250707-WA0009.jpg";
+import img2 from "@/assets/gallery/IMG-20250707-WA0010.jpg";
+
+import img4 from "@/assets/gallery/IMG-20250707-WA0012.jpg";
+import img3 from "@/assets/gallery/IMG-20250707-WA0011.jpg";
+import galleryVideo from "@/assets/gallery/VID-20250707-WA0002.mp4";
+import heroVideo from "@/assets/hero.mp4";
 
 const galleryImages = [
   {
     src: heroBg,
+    type: "image",
+    title: "Master Plan Overview",
+    category: "Master Plan"
+  },
+  {
+    src: img1,
+    type: "image",
     title: "Aerial Township View",
     category: "Master Plan"
   },
   {
-    src: plotSample,
+    src: img2,
+    type: "image",
     title: "Premium Plot Layout",
     category: "Plot Design"
   },
   {
-    src: heroBg,
-    title: "Infrastructure Development",
-    category: "Construction"
-  },
-  {
-    src: plotSample,
+    src: plotSample, // Keep the current placeholder for Architecture
+    type: "image",
     title: "Sample Villa Design",
     category: "Architecture"
   },
   {
-    src: heroBg,
+    src: img4,
+    type: "image",
     title: "Green Spaces",
     category: "Amenities"
   },
   {
-    src: plotSample,
+    src: img3,
+    type: "image",
     title: "Road Network",
     category: "Infrastructure"
+  },
+  {
+    src: galleryVideo,
+    type: "video",
+    title: "Project Walkthrough",
+    category: "Virtual Tour"
+  },
+  {
+    src: heroVideo,
+    type: "video",
+    title: "Hero Section Video",
+    category: "Overview"
   }
 ];
 
@@ -66,11 +91,22 @@ const Gallery = () => {
               className="group cursor-pointer"
             >
               <div className="relative overflow-hidden rounded-xl shadow-lg">
-                <img 
-                  src={image.src} 
-                  alt={image.title}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+                {image.type === "image" ? (
+                  <img 
+                    src={image.src} 
+                    alt={image.title}
+                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                ) : (
+                  <video
+                    src={image.src}
+                    controls
+                    autoPlay
+                    muted
+                    loop
+                    className="w-full h-64 object-cover"
+                  />
+                )}
                 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
