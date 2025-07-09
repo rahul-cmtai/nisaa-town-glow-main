@@ -90,9 +90,9 @@ const PlotCards = () => {
                     <h3 className="text-xl font-heading font-semibold text-foreground mb-2">
                       {plot.title}
                     </h3>
-                    <div className="text-3xl font-heading font-bold gradient-text mb-4">
+                    {/* <div className="text-3xl font-heading font-bold gradient-text mb-4">
                       {plot.price}
-                    </div>
+                    </div> */}
                   </div>
                   
                   <ul className="space-y-2 mb-6">

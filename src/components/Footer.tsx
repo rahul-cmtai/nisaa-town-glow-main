@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Download } from "lucide-react";
-import nisaaLogo from "@/assets/nisaa-logo.png";
+import logo from "@/assets/logo.jpg";
 import brochurePdf from "@/assets/NISAA SEZ TOWN BROCHURE.pdf";
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
             className="lg:col-span-2"
           >
             <div className="flex items-center gap-3 mb-6">
-              <img src={nisaaLogo} alt="NISAA Logo" className="w-12 h-12" />
+              <img src={logo} alt="NISAA Logo" className="w-12 h-12" />
               <div>
                 <h3 className="text-2xl font-heading font-bold">NISAA</h3>
                 <p className="text-sm opacity-80">SEZ TOWN</p>

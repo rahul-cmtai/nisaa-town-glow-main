@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
-import nisaaLogo from "@/assets/nisaa-logo.png";
+import logo from "@/assets/logo.jpg";
 
 const navigationItems = [
   { name: "Home", href: "#home" },
@@ -69,7 +69,7 @@ const Header = () => {
             className="flex items-center gap-3 cursor-pointer"
             onClick={() => scrollToSection("#home")}
           >
-            <img src={nisaaLogo} alt="NISAA Logo" className="w-10 h-10 lg:w-12 lg:h-12" />
+            <img src={logo} alt="NISAA Logo" className="w-10 h-10 lg:w-12 lg:h-12" />
             <div>
               <h1 className={`text-xl lg:text-2xl font-heading font-bold ${
                 isScrolled ? "text-primary" : "text-white"
