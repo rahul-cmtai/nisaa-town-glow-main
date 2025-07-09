@@ -9,6 +9,8 @@ import img4 from "@/assets/gallery/IMG-20250707-WA0012.jpg";
 import img3 from "@/assets/gallery/IMG-20250707-WA0011.jpg";
 import galleryVideo from "@/assets/gallery/VID-20250707-WA0002.mp4";
 import heroVideo from "@/assets/hero.mp4";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const galleryImages = [
   {
@@ -62,6 +64,18 @@ const galleryImages = [
 ];
 
 const Gallery = () => {
+  const [open, setOpen] = useState(false);
+  const [selected, setSelected] = useState<null | typeof galleryImages[0]>(null);
+
+  const handleOpen = (image: typeof galleryImages[0]) => {
+    setSelected(image);
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+    setSelected(null);
+  };
+
   return (
     <section id="gallery" className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
@@ -89,6 +103,7 @@ const Gallery = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="group cursor-pointer"
+              onClick={() => handleOpen(image)}
             >
               <div className="relative overflow-hidden rounded-xl shadow-lg">
                 {image.type === "image" ? (
@@ -129,6 +144,17 @@ const Gallery = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Fullscreen Dialog */}
+        <Dialog open={open} onOpenChange={(v) => { if (!v) handleClose(); }}>
+          <DialogContent className="max-w-4xl w-full bg-black p-0 flex items-center justify-center">
+            {selected && selected.type === "image" ? (
+              <img src={selected.src} alt={selected.title} className="w-full h-[80vh] object-contain bg-black" />
+            ) : selected && selected.type === "video" ? (
+              <video src={selected.src} controls autoPlay muted loop className="w-full h-[80vh] object-contain bg-black" />
+            ) : null}
+          </DialogContent>
+        </Dialog>
         
         <motion.div
           initial={{ opacity: 0, y: 30 }}

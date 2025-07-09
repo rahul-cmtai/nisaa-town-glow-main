@@ -114,7 +114,7 @@ const PlotCards = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      WhatsApp
+                      View Details
                     </a>
                   </Button>
                 </div>
