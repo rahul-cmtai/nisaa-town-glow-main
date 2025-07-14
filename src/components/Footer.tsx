@@ -75,9 +75,11 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 mt-1 text-accent" />
                 <div>
                   <p className="text-primary-foreground/80 text-sm">
-                    NISAA SEZ TOWN<br />
-                    Raipur, Chhattisgarh<br />
-                    India
+                    Sri Sai Villa No. 40, 
+<br />
+                    Near Mandal Office,
+Shamshabad,<br />
+                  Ranga Reddy District, Telangana.
                   </p>
                 </div>
               </div>
