@@ -53,8 +53,8 @@ const PlotCards = () => {
           </p>
         </motion.div>
         
-        <div className="overflow-x-auto pb-4">
-          <div className="flex gap-6 min-w-max md:grid md:grid-cols-2 lg:grid-cols-4 md:min-w-0">
+        <div className="pb-4">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 justify-center">
             {plotSizes.map((plot, index) => (
               <motion.div
                 key={index}
@@ -62,7 +62,7 @@ const PlotCards = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className={`flex-shrink-0 w-80 md:w-auto relative ${plot.popular ? 'transform scale-105' : ''}`}
+                className={`relative w-full ${plot.popular ? 'transform scale-105' : ''}`}
               >
                 {plot.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">

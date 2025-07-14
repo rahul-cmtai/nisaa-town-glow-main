@@ -138,7 +138,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Address</h4>
-                    <p className="text-muted-foreground">NISAA SEZ TOWN, Raipur, Chhattisgarh</p>
+                    <p className="text-muted-foreground">NISAA SEZ TOWN, Telangana, Chhattisgarh</p>
                   </div>
                 </div>
               </div>

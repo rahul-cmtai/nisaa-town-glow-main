@@ -10,7 +10,7 @@ const investmentPoints = [
   {
     icon: Plane,
     title: "Airport Connectivity",
-    description: "Strategic location with excellent connectivity to Raipur Airport"
+    description: "Strategic location with excellent connectivity to Telangana Airport"
   },
   {
     icon: TrendingUp,
@@ -25,7 +25,7 @@ const investmentPoints = [
   {
     icon: MapPin,
     title: "Prime Location",
-    description: "Located in the fast-growing corridor of Raipur's expansion"
+    description: "Located in the fast-growing corridor of Telangana's expansion"
   },
   {
     icon: Zap,

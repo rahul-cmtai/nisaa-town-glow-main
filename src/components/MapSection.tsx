@@ -4,7 +4,7 @@ import { MapPin, Plane, Train, Car, Building, Home } from "lucide-react";
 const locationPoints = [
   {
     icon: Plane,
-    title: "Raipur Airport",
+    title: "Telangana Airport",
     distance: "15 km",
     color: "text-blue-500"
   },
@@ -49,7 +49,7 @@ const MapSection = () => {
             Strategic <span className="gradient-text">Location</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Perfectly positioned in Raipur's growth corridor with excellent connectivity to all major landmarks
+            Perfectly positioned in Telangana's growth corridor with excellent connectivity to all major landmarks
           </p>
         </motion.div>
         
@@ -102,7 +102,7 @@ const MapSection = () => {
                 Connectivity Advantages
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                NISAA SEZ TOWN offers unparalleled connectivity to Raipur's key destinations, 
+                NISAA SEZ TOWN offers unparalleled connectivity to Telangana's key destinations, 
                 making it the perfect choice for modern living with easy access to work, travel, and leisure.
               </p>
             </div>
@@ -139,7 +139,7 @@ const MapSection = () => {
             >
               <h4 className="font-heading font-semibold mb-2">Location Highlight</h4>
               <p className="text-sm opacity-90">
-                Positioned on the rapidly developing Raipur-Bilaspur highway corridor, 
+                Positioned on the rapidly developing Telangana-Bilaspur highway corridor, 
                 ensuring excellent appreciation potential and future growth prospects.
               </p>
             </motion.div>

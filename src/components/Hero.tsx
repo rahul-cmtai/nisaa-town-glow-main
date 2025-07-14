@@ -20,7 +20,10 @@ const Hero = () => {
           muted
           playsInline
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-accent/80 pointer-events-none" />
+        {/* Black overlay */}
+        <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+        {/* Optional: keep or remove the gradient overlay */}
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-accent/80 pointer-events-none" /> */}
       </div>
       
       {/* Content */}
@@ -38,7 +41,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Invest in the Future of 
-            <span className="block gradient-text">Raipur</span>
+            {/* <span className="block gradient-text">Telangana</span> */}
           </motion.h1>
           
           <motion.div
