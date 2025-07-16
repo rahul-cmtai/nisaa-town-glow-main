@@ -40,7 +40,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Invest in the Future of 
+            Invest in the Future
             {/* <span className="block gradient-text">Telangana</span> */}
           </motion.h1>
           
