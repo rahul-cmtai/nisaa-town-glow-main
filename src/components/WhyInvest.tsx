@@ -1,36 +1,36 @@
 import { motion } from "framer-motion";
-import { CheckCircle, Plane, TrendingUp, Home, MapPin, Zap } from "lucide-react";
+import { CheckCircle, Plane, TrendingUp, Home, MapPin, Zap, Shield, Leaf, Droplet } from "lucide-react";
 
 const investmentPoints = [
   {
     icon: CheckCircle,
-    title: "100% RERA Approved",
+    title: "MUDA, DTCP & RERA Approved",
     description: "Fully compliant with all regulatory requirements for your peace of mind"
   },
   {
     icon: Plane,
-    title: "Airport Connectivity",
-    description: "Strategic location with excellent connectivity to Telangana Airport"
-  },
-  {
-    icon: TrendingUp,
-    title: "Assured Returns",
-    description: "Premium investment opportunity with guaranteed appreciation potential"
+    title: "Strategic Location",
+    description: "Near Polepally SEZ, just 2 km from NH 44 Bengaluru Highway"
   },
   {
     icon: Home,
-    title: "Residential Zones",
-    description: "Surrounded by established residential communities and amenities"
+    title: "Ready to Build Plots",
+    description: "Premium plots with clear title and spot registration available"
   },
   {
-    icon: MapPin,
-    title: "Prime Location",
-    description: "Located in the fast-growing corridor of Telangana's expansion"
+    icon: Shield,
+    title: "Gated Community",
+    description: "Secure compound wall, 24/7 security and modern amenities"
   },
   {
     icon: Zap,
-    title: "Smart Infrastructure",
-    description: "Modern amenities with future-ready infrastructure development"
+    title: "Complete Infrastructure",
+    description: "Underground drainage, electricity, water connection and street lights"
+  },
+  {
+    icon: Leaf,
+    title: "Premium Lifestyle",
+    description: "Club house, swimming pool, landscaped gardens and jogging track"
   }
 ];
 
@@ -49,7 +49,7 @@ const WhyInvest = () => {
             Why Invest in <span className="gradient-text">NISAA SEZ TOWN</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover the advantages that make our township the perfect investment choice for your future
+            A verdant investment destination with endless growth opportunities
           </p>
         </motion.div>
         
@@ -85,20 +85,20 @@ const WhyInvest = () => {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           <div className="text-center">
-            <div className="text-4xl font-heading font-bold gradient-text mb-2">220+</div>
-            <div className="text-muted-foreground">Premium Plots</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-heading font-bold gradient-text mb-2">22</div>
-            <div className="text-muted-foreground">Acres</div>
+            <div className="text-4xl font-heading font-bold gradient-text mb-2">60 ft</div>
+            <div className="text-muted-foreground">Road Width</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-heading font-bold gradient-text mb-2">100%</div>
             <div className="text-muted-foreground">RERA Approved</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-heading font-bold gradient-text mb-2">₹11,999</div>
-            <div className="text-muted-foreground">Per Sq. Yds</div>
+            <div className="text-4xl font-heading font-bold gradient-text mb-2">24/7</div>
+            <div className="text-muted-foreground">Security</div>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-heading font-bold gradient-text mb-2">BT</div>
+            <div className="text-muted-foreground">Roads</div>
           </div>
         </motion.div>
       </div>

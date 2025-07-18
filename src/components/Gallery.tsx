@@ -16,38 +16,38 @@ const galleryImages = [
   {
     src: heroBg,
     type: "image",
-    title: "Master Plan Overview",
+    title: "Premium Residential Plots",
     category: "Master Plan"
   },
   {
     src: img1,
     type: "image",
-    title: "Aerial Township View",
-    category: "Master Plan"
+    title: "Gated Community Layout",
+    category: "Infrastructure"
   },
   {
     src: img2,
     type: "image",
-    title: "Premium Plot Layout",
-    category: "Plot Design"
+    title: "60ft & 40ft Road Network",
+    category: "Roads"
   },
   {
-    src: plotSample, // Keep the current placeholder for Architecture
+    src: plotSample,
     type: "image",
-    title: "Sample Villa Design",
-    category: "Architecture"
+    title: "Ready to Build Plots",
+    category: "Plots"
   },
   {
     src: img4,
     type: "image",
-    title: "Green Spaces",
+    title: "Landscaped Gardens",
     category: "Amenities"
   },
   {
     src: img3,
     type: "image",
-    title: "Road Network",
-    category: "Infrastructure"
+    title: "Underground Drainage",
+    category: "Utilities"
   },
   {
     src: galleryVideo,
@@ -58,7 +58,7 @@ const galleryImages = [
   {
     src: heroVideo,
     type: "video",
-    title: "Hero Section Video",
+    title: "Aerial View",
     category: "Overview"
   }
 ];
@@ -90,7 +90,7 @@ const Gallery = () => {
             Project <span className="gradient-text">Gallery</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Explore the vision and reality of NISAA SEZ TOWN through our comprehensive project gallery
+            Explore NISAA SEZ TOWN's premium infrastructure and amenities
           </p>
         </motion.div>
         
@@ -164,7 +164,7 @@ const Gallery = () => {
           className="text-center mt-12"
         >
           <p className="text-muted-foreground mb-6">
-            Want to see more? Schedule a site visit to experience NISAA SEZ TOWN in person
+            Experience our meticulously landscaped areas, black top roads, and pollution-free environment
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

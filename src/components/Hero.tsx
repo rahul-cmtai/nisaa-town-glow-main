@@ -40,8 +40,9 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Invest in the Future of 
-            {/* <span className="block gradient-text">Telangana</span> */}
+            Elegance Elevated. Connectivity Redefined.
+           
+           
           </motion.h1>
           
           <motion.div
@@ -56,12 +57,12 @@ const Hero = () => {
             <div className="flex flex-wrap justify-center items-center gap-4 text-lg">
               <span className="flex items-center gap-2">
                 <MapPin className="w-5 h-5" />
-                RERA Approved
+                MUDA Approved
               </span>
               <span className="hidden md:block">•</span>
-              <span>Smart Plots</span>
+              <span>DTCP Approved</span>
               <span className="hidden md:block">•</span>
-              <span>Premium Township</span>
+              <span>RERA Approved</span>
             </div>
           </motion.div>
           

@@ -1,36 +1,54 @@
 import { motion } from "framer-motion";
-import { MapPin, Plane, Train, Car, Building, Home } from "lucide-react";
+import { MapPin, Plane, Train, Car, Building, Home, BookOpen, Trees, Navigation } from "lucide-react";
 
 const locationPoints = [
   {
     icon: Plane,
-    title: "Telangana Airport",
-    distance: "15 km",
+    title: "Rajiv Gandhi International Airport",
+    distance: "Hyderabad",
     color: "text-blue-500"
   },
   {
-    icon: Train,
-    title: "Railway Station",
-    distance: "8 km", 
-    color: "text-green-500"
+    icon: Navigation,
+    title: "Outer Ring Road",
+    distance: "Shamshabad", 
+    color: "text-purple-500"
+  },
+  {
+    icon: MapPin,
+    title: "Penjerla Road",
+    distance: "Kothur-Shadnagar X Road",
+    color: "text-orange-500"
   },
   {
     icon: Car,
-    title: "Ring Road",
+    title: "Hyderabad-Bengaluru NH 44",
     distance: "2 km",
     color: "text-purple-500"
   },
   {
+    icon: Train,
+    title: "MMTS & Railway Stations",
+    distance: "Shadnagar, Jadcherla", 
+    color: "text-green-500"
+  },
+  {
     icon: Building,
-    title: "IT Park",
-    distance: "12 km",
+    title: "Jadcherla IT Park",
+    distance: "15 min away",
     color: "text-orange-500"
   },
   {
-    icon: Home,
-    title: "Residential Hub",
-    distance: "1 km",
+    icon: BookOpen,
+    title: "Educational Institutions",
+    distance: "NMIMS, Symbiosis",
     color: "text-pink-500"
+  },
+  {
+    icon: Trees,
+    title: "Mayuri Eco Park",
+    distance: "Nearby",
+    color: "text-green-500"
   }
 ];
 
@@ -49,7 +67,7 @@ const MapSection = () => {
             Strategic <span className="gradient-text">Location</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Perfectly positioned in Telangana's growth corridor with excellent connectivity to all major landmarks
+            Located at Polepally, Jadcherla (2 km from NH 44) near Polepally Special Economic Zone
           </p>
         </motion.div>
         
@@ -99,36 +117,34 @@ const MapSection = () => {
           >
             <div className="mb-8">
               <h3 className="text-2xl font-heading font-semibold text-foreground mb-4">
-                Connectivity Advantages
+                Connectivity & Accessibility
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                NISAA SEZ TOWN offers unparalleled connectivity to Telangana's key destinations, 
-                making it the perfect choice for modern living with easy access to work, travel, and leisure.
+                NISAA SEZ TOWN offers unparalleled connectivity to key destinations, 
+                making it the perfect choice for modern living with easy access to work, education, and leisure.
               </p>
             </div>
             
-            {locationPoints.map((point, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="flex items-center gap-4 card-glow"
-              >
-                <div className={`w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center`}>
-                  <point.icon className="w-6 h-6 text-white" />
-                </div>
-                <div className="flex-1">
-                  <h4 className="font-heading font-semibold text-foreground">{point.title}</h4>
-                  <p className="text-muted-foreground text-sm">Easy access via well-connected roads</p>
-                </div>
-                <div className="text-right">
-                  <div className="text-lg font-heading font-bold gradient-text">{point.distance}</div>
-                  <div className="text-xs text-muted-foreground">distance</div>
-                </div>
-              </motion.div>
-            ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {locationPoints.map((point, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-center gap-4 card-glow"
+                >
+                  <div className={`w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center`}>
+                    <point.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-heading font-semibold text-foreground">{point.title}</h4>
+                    <p className="text-muted-foreground text-sm">{point.distance}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -137,10 +153,10 @@ const MapSection = () => {
               viewport={{ once: true }}
               className="mt-8 p-6 bg-gradient-primary rounded-xl text-white"
             >
-              <h4 className="font-heading font-semibold mb-2">Location Highlight</h4>
+              <h4 className="font-heading font-semibold mb-2">Industries & Institutions Nearby</h4>
               <p className="text-sm opacity-90">
-                Positioned on the rapidly developing Telangana-Bilaspur highway corridor, 
-                ensuring excellent appreciation potential and future growth prospects.
+                Surrounded by major pharma companies like Aurobindo, Hetero Drugs, Mylan Labs, 
+                educational institutions like NMIMS and Symbiosis, and tech facilities including Microsoft Data Center.
               </p>
             </motion.div>
           </motion.div>

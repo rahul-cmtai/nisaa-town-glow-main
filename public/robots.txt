@@ -1,8 +1,10 @@
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -12,3 +14,16 @@ Allow: /
 
 User-agent: *
 Allow: /
+Allow: /plots-in-hyderabad
+Allow: /plots-in-ranga-reddy
+Allow: /rera-approved-plots
+Allow: /investment-plots
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Sitemap
+Sitemap: https://nisaaseztown.com/sitemap.xml

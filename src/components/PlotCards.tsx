@@ -4,33 +4,29 @@ import plotSample from "@/assets/plot-sample.jpg";
 
 const plotSizes = [
   {
-    title: "Compact Premium",
+    title: "Standard Plot",
     dimensions: "30' × 40'",
     area: "1200 Sq. Ft",
-    price: "₹14.4 Lakhs",
-    features: ["Corner Plot Available", "East Facing", "Ready to Build"]
+    features: ["Clear Title", "Ready to Build", "Spot Registration"]
   },
   {
-    title: "Family Comfort",
+    title: "Family Plot",
     dimensions: "40' × 60'",
     area: "2400 Sq. Ft", 
-    price: "₹28.8 Lakhs",
-    features: ["Premium Location", "Wide Road Access", "Park Facing"],
+    features: ["Underground Drainage", "Electricity Connection", "Water Connection"],
     popular: true
   },
   {
-    title: "Luxury Estate",
+    title: "Premium Plot",
     dimensions: "50' × 80'",
     area: "4000 Sq. Ft",
-    price: "₹48 Lakhs",
-    features: ["Prime Corner", "Multiple Road Access", "Premium Amenities"]
+    features: ["Avenue Plantation", "Compound Wall", "24/7 Security"]
   },
   {
-    title: "Grand Villa",
+    title: "Luxury Plot",
     dimensions: "60' × 90'",
     area: "5400 Sq. Ft",
-    price: "₹64.8 Lakhs",
-    features: ["Exclusive Location", "Boulevard Facing", "Private Garden Space"]
+    features: ["Near Club House", "Swimming Pool Access", "Landscaped Gardens"]
   }
 ];
 
@@ -49,7 +45,7 @@ const PlotCards = () => {
             Choose Your Perfect <span className="gradient-text">Plot Size</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            From compact premium plots to grand villa estates - find the perfect space for your dream home
+            Premium residential plots with 60 ft & 40 ft road widths - ready to build your dream home
           </p>
         </motion.div>
         
@@ -131,7 +127,7 @@ const PlotCards = () => {
           className="text-center mt-12"
         >
           <p className="text-muted-foreground mb-4">
-            * All prices are starting prices and subject to plot location and availability
+            * All plots come with clear title and loan approval available
           </p>
           <a href="#contact">
             <Button size="lg" variant="premium" className="px-8">

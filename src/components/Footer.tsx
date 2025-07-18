@@ -27,8 +27,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed mb-6 max-w-md">
-              Creating premium residential communities with world-class infrastructure 
-              and sustainable living solutions. Your trusted partner in real estate investment.
+              Premium Residential Plots Project on Bengaluru Highway. 
+              Developed by NISAA, NR REALTORS with MUDA, DTCP and RERA approvals.
+              A verdant investment destination with endless growth opportunities.
             </p>
             <div className="flex items-center gap-4">
               <a href={brochurePdf} download target="_blank" rel="noopener noreferrer">
@@ -109,14 +110,14 @@ Shamshabad,<br />
           <div className="bg-primary-foreground/10 rounded-lg p-6 mb-8">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
               <div>
-                <h4 className="font-heading font-semibold text-accent mb-2">RERA Registration Details</h4>
+                <h4 className="font-heading font-semibold text-accent mb-2">Approval Details</h4>
                 <p className="text-sm text-primary-foreground/80">
-                  TLP NO: 67486/LP/GP/205292/0006/2025 | RERA APPROVED
+                  MUDA Approved | DTCP Approved | RERA Approved | Loan Approval Available
                 </p>
               </div>
               <div className="text-right">
                 <p className="text-sm text-primary-foreground/80">
-                  All information provided is subject to change and verification.
+                  Developed & Marketed by Rayyan and RN REALTORS
                 </p>
               </div>
             </div>
@@ -127,7 +128,7 @@ Shamshabad,<br />
               © {currentYear} NISAA Realtors. All rights reserved.
             </p>
             <p>
-              Designed with excellence for premium living
+              This brochure is only a conceptual presentation and not a legal offering.
             </p>
           </div>
         </motion.div>

@@ -42,7 +42,7 @@ const ContactForm = () => {
       email: formData.email,
       plotSize: formData.plotSize,
       message: formData.message,
-      subject: "New Enquiry from NISAA Realtors Website",
+      subject: "New Enquiry from NISAA SEZ TOWN Website",
       from_name: formData.name
     };
 
@@ -95,7 +95,7 @@ const ContactForm = () => {
             Get in <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to invest? Contact our expert team for personalized guidance and site visits
+            Ready to invest in a verdant destination with endless growth opportunities
           </p>
         </motion.div>
 
@@ -138,27 +138,27 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Address</h4>
-                    <p className="text-muted-foreground">NISAA SEZ TOWN, Telangana, Chhattisgarh</p>
+                    <p className="text-muted-foreground">Sri Sai Villa No. 40, Near Mandal Office, Shamshabad, Ranga Reddy District, Telangana</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Office Hours */}
+            {/* Developer Info */}
             <div className="card-glow">
-              <h4 className="font-heading font-semibold text-foreground mb-4">Office Hours</h4>
+              <h4 className="font-heading font-semibold text-foreground mb-4">Developed & Marketed by</h4>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Monday - Friday:</span>
-                  <span className="text-foreground">9:00 AM - 7:00 PM</span>
+                  <span className="text-muted-foreground">Developer:</span>
+                  <span className="text-foreground">Rayyan, RN REALTORS</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Saturday:</span>
-                  <span className="text-foreground">9:00 AM - 5:00 PM</span>
+                  <span className="text-muted-foreground">Approvals:</span>
+                  <span className="text-foreground">MUDA, DTCP & RERA Approved</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Sunday:</span>
-                  <span className="text-foreground">10:00 AM - 4:00 PM</span>
+                  <span className="text-muted-foreground">Financing:</span>
+                  <span className="text-foreground">Loan Approval Available</span>
                 </div>
               </div>
             </div>
@@ -218,10 +218,10 @@ const ContactForm = () => {
                     <SelectValue placeholder="Select plot size preference" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="30x40">30' × 40' - Compact Premium</SelectItem>
-                    <SelectItem value="40x60">40' × 60' - Family Comfort</SelectItem>
-                    <SelectItem value="50x80">50' × 80' - Luxury Estate</SelectItem>
-                    <SelectItem value="60x90">60' × 90' - Grand Villa</SelectItem>
+                    <SelectItem value="30x40">30' × 40' - Standard Plot</SelectItem>
+                    <SelectItem value="40x60">40' × 60' - Family Plot</SelectItem>
+                    <SelectItem value="50x80">50' × 80' - Premium Plot</SelectItem>
+                    <SelectItem value="60x90">60' × 90' - Luxury Plot</SelectItem>
                     <SelectItem value="custom">Custom Requirements</SelectItem>
                   </SelectContent>
                 </Select>
@@ -250,23 +250,6 @@ const ContactForm = () => {
             </form>
           </motion.div>
         </div>
-
-        {/* WhatsApp Button */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 1 }}
-          className="fixed bottom-6 right-6 z-50"
-        >
-          <a href="https://wa.me/919963627722" target="_blank" rel="noopener noreferrer">
-            <Button
-              className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg animate-pulse"
-              size="icon"
-            >
-              <MessageSquare className="w-6 h-6" />
-            </Button>
-          </a>
-        </motion.div>
       </div>
     </section>
   );
